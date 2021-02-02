@@ -1,10 +1,11 @@
+from array import array
 def merge(left, right):
     # If one of the lists are empty we don t have to do anything, just return the other one
     if len(left) == 0:
         return right
     if len(right) == 0:
         return left
-    result = []
+    result = array("i")
     index_left = index_right = 0
     # Iterate over all of the elements from both lists. Compare each element from both lists one by one.
     # If one of them is greater we are putting this into result list, and move on in this list

@@ -1,12 +1,13 @@
 import random
 import sorts
 from Errors import Error
+from array import array
 
 
-class Array:
+class SortingArray:
 
     def __init__(self, n):
-        self.tab = []
+        self.tab = array("i")
         self.fill(n)
 
     def fill(self, n):
@@ -37,12 +38,16 @@ class Array:
     def partsort(self, n):
         if n > 1:
             raise Error("Value should be equal or less than 1")
-        tmp = self.tab[0:round(len(self.tab) * n)]
+
+        list = self.tab.tolist()
+        tmp = list[0:round(len(self.tab) * n)]
         tmp.sort()
-        self.tab[0:round(len(self.tab) * n)] = tmp
+        list[0:round(len(self.tab) * n)] = tmp
+        self.tab = array("i", list)
 
     def reversesort(self):
-        self.tab.sort(reverse=True)
+        self.tab = sorts.quicksort(self.tab)
+        self.tab.reverse()
 
     def reset(self):
         self.tab = []

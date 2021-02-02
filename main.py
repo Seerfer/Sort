@@ -1,4 +1,1 @@
-from test import *
-
-set_tests()
-
+from test import set_conditions

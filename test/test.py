@@ -1,4 +1,4 @@
-from Array import Array
+from SortingArray import SortingArray
 from Errors import Error
 import datetime
 
@@ -19,7 +19,7 @@ def _prepare_arrays(arrays_number, length_of_array, partsortvalue=0, reverse=Fal
     arrays = []
 
     for _ in range(arrays_number):
-        array = Array(length_of_array)
+        array = SortingArray(length_of_array)
         arrays.append(array)
 
     _partsort(partsortvalue, arrays)
@@ -38,7 +38,7 @@ def test(arrays_number, length_of_array, algorithm_name, partsortvalue=0, revers
         raise Error("Wrong algoritm value")
 
     arrays = _prepare_arrays(arrays_number, length_of_array, partsortvalue, reverse)
-    algoritmh = getattr(Array, algorithm_name)
+    algoritmh = getattr(SortingArray, algorithm_name)
 
     start = datetime.datetime.now()
     for array in arrays:
