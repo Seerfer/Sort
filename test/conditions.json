@@ -1,0 +1,16 @@
+{
+  "algorithms" :
+  {
+    "quicksort": false,
+    "mergesort": false,
+    "introsort": false,
+    "bubblesort": true
+  },
+  "number_of_arrays": 100,
+  "array_length": [100],
+  "other":
+  {
+    "reverse": false,
+    "part": [0]
+  }
+}

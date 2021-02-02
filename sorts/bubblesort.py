@@ -1,4 +1,4 @@
-def bubble_sort(tab):
+def bubblesort(tab):
     n = len(tab)
     for i in range(n):
         is_sorted = True

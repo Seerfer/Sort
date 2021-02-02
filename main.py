@@ -1,7 +1,4 @@
-from Table import Table
+from test import *
 
+set_tests()
 
-Tab = Table()
-Tab.fill(10)
-Tab.partsort(0.8)
-print(Tab.list())
