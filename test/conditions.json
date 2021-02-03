@@ -1,9 +1,9 @@
 {
   "algorithms" :
   {
-    "quicksort": false,
-    "mergesort": false,
-    "introsort": false,
+    "quicksort": true,
+    "mergesort": true,
+    "introsort": true,
     "bubblesort": true
   },
   "number_of_arrays": 100,
