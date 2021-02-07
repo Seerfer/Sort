@@ -1,6 +1,6 @@
 from SortingArray import SortingArray
 from Errors import Error
-import datetime
+import time
 
 
 def _partsort(n, arrays):
@@ -40,9 +40,9 @@ def test(arrays_number, length_of_array, algorithm_name, partsortvalue=0, revers
     arrays = _prepare_arrays(arrays_number, length_of_array, partsortvalue, reverse)
     algoritmh = getattr(SortingArray, algorithm_name)
 
-    start = datetime.datetime.now()
+    start = time.perf_counter()
     for array in arrays:
         algoritmh(array)
-    end = datetime.datetime.now()
+    end = time.perf_counter()
 
-    return (end - start).microseconds
+    return end - start
