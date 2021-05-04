@@ -1,7 +1,6 @@
 # SortingAlgorithms
 
-This programs is created to test effectiveness of diffrent sorting algorithms.
-For this day it  has implamented quicksort, mergesort and bubblesort.
-It can be tested in diffrent conditions. We can choose how many arrays 
-we want to sort, how many numbers will be in singel array. Moreover we can 
-sort a part of first elements before testing it, or we can sort it in reverse.
+This is implementation of diffrent sorting algorithms. Currently we have implemented Mergesort, Bubblesort, Introsort and Quicksort.
+There are also apllied functions to generate our arrays in special format (for example sorted in reverse at begining, or sorted only part of array).
+Project was made while learning standard Python functions and thats why a lot of things can be implemented better. I have paln to develop this project
+and rewrite implementation using multiprocessing 
